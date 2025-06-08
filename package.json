@@ -33,7 +33,7 @@
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^2.5.0",
     "typescript": "^5.0.0",
-    "wasm-pack": "^0.12.0"
+    "wasm-pack": "^0.0.0"
   },
   "repository": {
     "type": "git",
