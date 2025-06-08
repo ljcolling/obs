@@ -1,0 +1,27 @@
+[package]
+name = "my_wasm_module"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = {version = "0.2", features = ["serde-serialize"]}
+js-sys = "0.3"
+wasm-bindgen-futures = "0.4"
+
+# For console logging from WASM
+web-sys = { version = "0.3", features = [
+  "console",
+  "Performance",
+  "Window"
+]}
+
+# Optional: for serialization
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.4"
+
+# Optional: for random number generation
+getrandom = { version = "0.2", features = ["js"] }
+
